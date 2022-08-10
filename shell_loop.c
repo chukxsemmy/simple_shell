@@ -2,7 +2,6 @@
 
 /**
  * without_comment - deletes comments from the input
- *
  * @in: input string
  * Return: input without comments
  */
@@ -22,7 +21,7 @@ char *without_comment(char *in)
 				return (NULL);
 			}
 
-			if (in[i - 1] == ' ' || in[i - 1] == '\t' || in[i - 1] == '\0')
+			if (in[i - 1] == '\0' || in[i - 1] == '\t' || in[i - 1] == '\0')
 				up_to = i;
 		}
 	}
